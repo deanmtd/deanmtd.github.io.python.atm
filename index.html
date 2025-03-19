@@ -2,24 +2,123 @@
 <html>
 <head>
     <title>Python Automation Scripts Portfolio - Dean</title>
+    <style>
+        :root {
+            --python-blue: #306998;
+            --python-yellow: #FFD43B;
+            --python-dark-blue: #1c4163;
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg: white;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--python-blue);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--python-yellow);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h2 {
+            color: var(--python-dark-blue);
+            border-bottom: 2px solid var(--python-yellow);
+            padding-bottom: 0.5rem;
+        }
+        
+        article {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--python-blue);
+        }
+        
+        h3 {
+            color: var(--python-dark-blue);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        a {
+            display: inline-block;
+            background-color: var(--python-yellow);
+            color: var(--python-dark-blue);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 0.5rem 0 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: var(--python-dark-blue);
+            color: white;
+        }
+        
+        p {
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background-color: var(--python-dark-blue);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        /* Python code-like elements */
+        .code-comment {
+            color: var(--python-blue);
+            font-family: monospace;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .import-section {
+            font-family: monospace;
+            margin-top: 1rem;
+            color: var(--python-dark-blue);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Py Automation Scripts Portfolio</h1>
+        <p class="import-section">from dean import automation_skills</p>
     </header>
-
     <section>
         <h2>Py Projects</h2>
-
         <article>
             <h3>emailPhoneExtractor</h3>
             <a href="https://deanmtd.github.io/phoneEmailExtractor/">View Repository</a>
             <p>This Python script extracts email addresses and phone numbers from a CSV file and saves them into separate CSV files. The script reads a CSV file containing email addresses and phone numbers, extracts the email addresses and phone numbers, and then writes them to two separate CSV files. The names associated with each phone number are extracted from the email address.</p>
-            <!img src="images/aws-iam-screenshot.png" alt="AWS-IAM Screenshot" width="400">
+            <p class="code-comment"># Efficient data extraction using regex and pandas</p>
         </article>
-
-        </section>
-
+    </section>
     <footer>
         <p>&copy; Dean 2025</p>
     </footer>
